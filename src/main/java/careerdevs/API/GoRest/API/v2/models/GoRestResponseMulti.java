@@ -1,9 +1,9 @@
 package careerdevs.API.GoRest.API.v2.models;
 
-public class GoRestAPIResponse {
+public class GoRestResponseMulti {
 
     private GoRestMeta meta;
-    private GoRestAPIUser data;
+    private GoRestAPIUser[] data;
 
     public GoRestMeta getMeta() {
         return meta;
@@ -13,12 +13,11 @@ public class GoRestAPIResponse {
         this.meta = meta;
     }
 
-    public GoRestAPIUser getData() {
+    public GoRestAPIUser[] getData() {
         return data;
     }
 
-    public void setData(GoRestAPIUser data) {
+    public void setData(GoRestAPIUser[] data) {
         this.data = data;
     }
-
 }
